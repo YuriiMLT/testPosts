@@ -12,6 +12,6 @@ export const AppDataSource: DataSourceOptions = {
     synchronize: true,
     migrationsRun: false,
     migrations: ['dist/**/migrations/*.js'],
-    migrationsTableName: 'posts'
+    migrationsTableName: 'migrations'
 }
 
