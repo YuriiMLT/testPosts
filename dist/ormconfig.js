@@ -1,6 +1,7 @@
-import { DataSourceOptions } from 'typeorm';
-
-export const AppDataSource: DataSourceOptions = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppDataSource = void 0;
+exports.AppDataSource = {
     type: 'postgres',
     host: 'localhost',
     port: 5432,
@@ -13,5 +14,5 @@ export const AppDataSource: DataSourceOptions = {
     migrationsRun: false,
     migrations: ['dist/**/migrations/*.js'],
     migrationsTableName: 'posts'
-}
-
+};
+//# sourceMappingURL=ormconfig.js.map
