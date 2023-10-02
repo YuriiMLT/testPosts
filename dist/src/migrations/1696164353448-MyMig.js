@@ -1,9 +1,10 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
-
-export class MyMig1696164353448 implements MigrationInterface {
-
-    public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.createTable(new Table({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MyMig1696164353448 = void 0;
+const typeorm_1 = require("typeorm");
+class MyMig1696164353448 {
+    async up(queryRunner) {
+        await queryRunner.createTable(new typeorm_1.Table({
             name: "posts",
             columns: [
                 {
@@ -47,8 +48,9 @@ export class MyMig1696164353448 implements MigrationInterface {
             ]
         }));
     }
-
-    public async down(queryRunner: QueryRunner): Promise<void> {
+    async down(queryRunner) {
         await queryRunner.dropTable("posts");
     }
 }
+exports.MyMig1696164353448 = MyMig1696164353448;
+//# sourceMappingURL=1696164353448-MyMig.js.map
