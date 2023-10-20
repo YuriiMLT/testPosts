@@ -8,10 +8,9 @@ exports.AppDataSource = {
     username: 'yurii',
     password: '12345',
     database: 'posts',
-    entities: ['dist/**/*.entity.js'],
     logging: true,
     synchronize: true,
-    migrationsRun: false,
-    migrations: ['dist/**/migrations/*.js'],
-    migrationsTableName: 'posts'
+    entities: ['dist/**/*.entity.js'],
+    migrations: ['dist/src/migration/*.js'],
+    migrationsTableName: 'migrations',
 };
