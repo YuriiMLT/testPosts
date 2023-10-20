@@ -15,4 +15,3 @@ exports.AppDataSource = {
     migrations: ['dist/**/migrations/*.js'],
     migrationsTableName: 'posts'
 };
-//# sourceMappingURL=ormconfig.js.map
